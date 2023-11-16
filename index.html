@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    
+    <div id="tax-manager-page">
+        <div id="links">
+            <ul class="nav nav-pills .nav-justified">
+                <li class="active"><a data-toggle="tab" href="#tax-manager">Tax Manager</a></li>
+                <li><a data-toggle="tab" href="#bill-manager">Bill Manager</a></li>
+                
+            </ul>
+        </div>
+        
+        
+        <div class="tab-content">
+          <div id="tax-manager" class="tab-pane fade in active">
+            <form action="" method="get">
+
+                <div id="gross-salary">
+                    <p>Gross Salary (Monthly)</p>
+                    <div>
+                    <input type="number" name="gross-salary" id="gross-salary" placeholder=" N amount">
+                    <input type="button" value="add" id="add-button">
+                    </div>
+                </div>
+
+                
+                
+                
+                <div>
+
+                    <div id="tax-row">
+                        <p>NHF contribution</p>
+                        <p id="nhf"></p>
+                    </div>
+
+                    <div id="tax-row">
+                        <p>Pension</p>
+                        <p id="pension"></p>
+                    </div>
+
+                    <div id="tax-row">
+                        <p>NHIS</p>
+                        <p id="nhis"></p>
+                    </div>
+                    
+                    <div id="tax-row">
+                        <p>PAYE</p>
+                        <p id="paye"></p>
+                    </div>
+                </div> 
+
+                <div id="Netpay">
+                    <p>Netpay</p>
+                    <div id="netpay">
+
+                    </div>
+                </div>
+            </form>
+          </div><br>
+
+
+          <div id="bill-manager" class="tab-pane fade">
+            <div class="form-salary">
+                <div>
+                    <form action="" class="form-bills">
+                        <div id="netpay2">
+                            <h3>Netpay:</h3>
+                            <h3 id="bill-netpay"></h3>
+                        </div>
+                        
+
+                        <div id="new-bill">
+                            <input type="text" name="" id="bill-name" placeholder="bill name">
+                            <input type="tel" name="name" id="bill-amount" placeholder="amount in naira"><br>
+
+                        </div>
+
+                        <div>
+                            <input type="button" value="+ Add New Bills" id="add-new-bills">
+                        </div><br><br>
+                        
+                        <div id="new-bills">
+                            
+                        </div>
+                        <div id="balance">
+                            <h3>Balance</h3>
+                            <h2 id="balance-amt"></h2>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        
+        </div><br>
+
+        
+    
+   
+
+    <footer>
+        <p>Powered by Bheatle HQ</p>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
