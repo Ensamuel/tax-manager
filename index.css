@@ -1,26 +1,5 @@
 
-#natujenge-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 
-#natujenge-image{
-    display: flex;
-}
-
-#natujenge-image img{
-    height: 40px;
-    width: 30;
-    margin-top: 10px;
-    margin-left: 10px;
-}
-
-.natujenge_ext_link {
-  color: #f5f5f5;
-  box-sizing: border-box;
-  text-decoration: none;
-}
 
 #content{
     font-size: 20px;
@@ -35,21 +14,18 @@
     background-color: white;
     margin-left: 5px;
 }
-#Netpay{
+#netpay{
     display: flex;
     justify-content: space-between;
     font-size: 20px;
-    margin-bottom: 10px;
-    border-bottom: 1px solid black;
     align-items: center;
+    border-bottom: 1px solid black;
+
 }
 
-#Netpay input{
-    border: 1px solid #1CB484;
-    outline: none;
-    margin-top: -10px;
-    float: right;
-    border-radius: 5px;
+#outputDiv{
+    font-size: 20px;
+     
 }
 
 #links ul{
@@ -134,7 +110,7 @@ footer{
     justify-content: space-between;
     align-items: center;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 
 
@@ -149,4 +125,9 @@ footer{
     clear: both;
     display: flex;
     justify-content: space-between;
+  }
+
+  #balance-amount{
+    display: flex;
+    justify-content: space-around;
   }
