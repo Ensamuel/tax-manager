@@ -67,8 +67,13 @@ billsAmount.addEventListener('keypress',function(e){
 let deleteBtn = document.getElementById('deleteBtn')
 
 deleteBtn.addEventListener('click', function(){
-  balanceAmount.textContent = parseFloat(balanceAmount.textContent)+parseFloat(billsAmount.value)
-  billsAmount.value = ''
+  if(billsAmount.value === ''){
+    balanceAmount.textContent = ''
+  }else{
+    balanceAmount.textContent = parseFloat(balanceAmount.textContent)+parseFloat(billsAmount.value)
+    billsAmount.value = ''
+  }
+  
 })
 
 
@@ -89,9 +94,98 @@ billsAmount2.addEventListener('keypress',function(e){
 let deleteBtn2 = document.getElementById('deleteBtn2')
 
 deleteBtn2.addEventListener('click', function(){
-  balanceAmount.textContent = parseFloat(balanceAmount.textContent)+parseFloat(billsAmount2.value)
-  billsAmount2.value = ''
+  if(billsAmount2.value === ''){
+    balanceAmount2.textContent = ''
+  }else{
+    balanceAmount.textContent = parseFloat(balanceAmount.textContent)+parseFloat(billsAmount2.value)
+    billsAmount.value = ''
+  }
+
 })
+
+
+
+let billsName3 = document.getElementById('bill_name3')
+let billsAmount3 = document.getElementById('bill_amount3')
+
+billsAmount3.addEventListener('keypress',function(e){
+  if(e.key === 'Enter' ){
+    
+    balanceAmount.textContent = parseFloat(balanceAmount.textContent)-parseFloat(billsAmount3.value)
+    
+  }
+  
+} )
+
+let deleteBtn3 = document.getElementById('deleteBtn3')
+
+deleteBtn3.addEventListener('click', function(){
+  
+  if(billsAmount3.value === ''){
+    balanceAmount3.textContent = ''
+  }else{
+    balanceAmount.textContent = parseFloat(balanceAmount.textContent)+parseFloat(billsAmount3.value)
+    billsAmount.value = ''
+  }
+})
+
+
+
+
+
+let billsName4 = document.getElementById('bill_name4')
+let billsAmount4 = document.getElementById('bill_amount4')
+
+billsAmount4.addEventListener('keypress',function(e){
+  if(e.key === 'Enter' ){
+    
+    balanceAmount.textContent = parseFloat(balanceAmount.textContent)-parseFloat(billsAmount2.value)
+    
+  }
+  
+} )
+
+let deleteBtn4 = document.getElementById('deleteBtn4')
+
+deleteBtn4.addEventListener('click', function(){
+  if(billsAmount4.value === ''){
+    balanceAmount4.textContent = ''
+  }else{
+    balanceAmount.textContent = parseFloat(balanceAmount.textContent)+parseFloat(billsAmount4.value)
+    billsAmount.value = ''
+  }
+})
+
+
+
+let billsName5 = document.getElementById('bill_name5')
+let billsAmount5 = document.getElementById('bill_amount5')
+
+billsAmount5.addEventListener('keypress',function(e){
+  if(e.key === 'Enter' ){
+    
+    balanceAmount.textContent = parseFloat(balanceAmount.textContent)-parseFloat(billsAmount5.value)
+    
+  }
+  
+} )
+
+let deleteBtn5 = document.getElementById('deleteBtn5')
+
+deleteBtn5.addEventListener('click', function(){
+  if(billsAmount5.value === ''){
+    balanceAmount5.textContent = ''
+  }else{
+    balanceAmount.textContent = parseFloat(balanceAmount.textContent)+parseFloat(billsAmount5.value)
+    billsAmount.value = ''
+  }
+})
+
+
+
+
+
+
 
 
 
